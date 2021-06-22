@@ -34,4 +34,10 @@ public class Table extends ElementBase{
         columns.add(column);
     }
 
+    public void AddRow(Row row)
+    {
+        rows.add(row);
+    }
+
+
 }

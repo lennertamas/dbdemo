@@ -19,6 +19,22 @@ public class Database extends ElementBase{
             table.AddColumn(column1);
             table.AddColumn(column2);
 
+            Row row1 = new Row();
+            row1.Add(1);
+            row1.Add("Zoli");
+            table.AddRow(row1);
+
+            for (Row row: table.getRows()) {
+                for (Cell cell: row.getCells()) {
+                    if(cell.getClass() == CellInteger.class) {
+                        CellInteger c = (CellInteger)cell;
+                        System.out.println(c.getValue());
+                    }
+                }
+            }
+
+
+
             for (Column col: table.getColumns())
             {
                 System.out.println(col.getName());
