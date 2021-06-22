@@ -3,12 +3,11 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Table {
+public class Table extends ElementBase{
 
     //variables
     private List<Column> columns;
     private List<Row> rows;
-    private String name;
 
 
     //properties
@@ -20,14 +19,11 @@ public class Table {
         return rows;
     }
 
-    public String getName() {
-        return name;
-    }
 
     //contructor
     public Table(String nm)
     {
-        this.name = nm;
+        setName(nm);
         this.columns = new ArrayList<Column>();
         this.rows = new ArrayList<Row>();
     }

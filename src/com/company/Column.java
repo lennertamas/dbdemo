@@ -1,20 +1,16 @@
 package com.company;
 
-public class Column {
+public class Column extends ElementBase {
 
-    private String name;
     private ColumnType type;
 
-    public String getName() {
-        return name;
-    }
     public ColumnType getType() {
         return type;
     }
 
     public Column (String nm, ColumnType tp)
     {
-        name = nm;
+        setName(nm);
         type = tp;
     }
 }

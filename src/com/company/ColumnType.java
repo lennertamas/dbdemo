@@ -1,7 +1,6 @@
 package com.company;
 
-public enum ColumnType {
+public enum ColumnType  {
     VARCHAR,
-    INTEGER,
-    DATE
+    INTEGER
 }

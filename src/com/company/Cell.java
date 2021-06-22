@@ -1,4 +1,5 @@
 package com.company;
 
-public class Cell {
+public class Cell extends ElementBase {
+
 }

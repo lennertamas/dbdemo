@@ -1,16 +1,10 @@
 package com.company;
 
-public class Database {
-
-    private String name;
-
-    public String getName() {
-        return name;
-    }
+public class Database extends ElementBase{
 
     public Database(String nm)
     {
-        name = nm;
+        setName(nm);
     }
 
     public void Execute(String command)
